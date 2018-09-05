@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Heo-H/blockchain-voting/issues"
   },
-  "homepage": "https://github.com/Heo-H/blockchain-voting#readme"
+  "homepage": "https://github.com/Heo-H/blockchain-voting#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
