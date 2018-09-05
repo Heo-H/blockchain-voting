@@ -1,0 +1,5 @@
+{
+    "appName": "voting-station",
+    "port": 3000,
+    "staticDocPath": "/public"
+}

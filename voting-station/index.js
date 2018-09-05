@@ -1,6 +1,7 @@
-const APP_NAME = 'voting-station';
-const SERVER_PORT = 3000;
-const STATIC_DOC_PATH = '/public';
+const config = require(__dirname + '/public/config.json');
+const APP_NAME = config.appName;
+const SERVER_PORT = config.port;
+const STATIC_DOC_PATH = config.staticDocPath;
 
 const express = require('express');
 const app = express();
