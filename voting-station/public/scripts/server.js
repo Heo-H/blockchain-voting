@@ -1,5 +1,5 @@
 function getVoterId() {
-    return $('#voter_id').val();
+    return $('#login_voter_id').val();
 }
 
 function getElection(electionId) {
