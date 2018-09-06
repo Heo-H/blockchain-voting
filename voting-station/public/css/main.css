@@ -1,0 +1,9 @@
+.page {
+    width: 300px;
+    margin: 0 auto;
+    min-height: 500px;
+    text-align: center;
+
+    font-family: '맑은 고딕';
+    color: #303030;
+}
