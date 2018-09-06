@@ -1,6 +1,5 @@
 function getVoterId() {
-    const voterIdInput = $('#voter_id');
-    return voterIdInput.text();
+    return $('#voter_id').val();
 }
 
 function getElection(electionId) {
