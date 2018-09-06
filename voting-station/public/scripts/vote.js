@@ -13,3 +13,27 @@ function refreshVotePage() {
         itemId += 1;
     });
 }
+
+
+$(document).ready(function () {
+
+$('#vote_form').submit(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const data = $('#vote_form').serialize();
+    submitVote(data);
+
+    const hasNextElection = (globalData.electionIndex < globalData.elections.length - 1);
+    if (hasNextElection) {
+        globalData.electionIndex += 1;
+        refreshVotePage();
+    }
+    else {
+        displayPage('login');
+    }
+
+    return false;
+});
+
+});

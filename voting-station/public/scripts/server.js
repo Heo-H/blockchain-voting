@@ -33,3 +33,7 @@ function getElectionsByVoter(voterId) {
     
     return elections;
 }
+
+function submitVote(data) {
+    console.log("submit: " + data);
+}
