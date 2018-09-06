@@ -1,17 +1,13 @@
 <link rel="stylesheet" href="./css/vote.css" type="text/css">
+<script src="./scripts/vote.js"></script>
 
-<h1 id="vote_title">선거 A</h1>
+<h1 id="election_title"></h1>
 
 <form id="vote_form">
-    <input type="hidden" name="vote_id" value="1" required>
-    <input type="hidden" name="voter_id" value="1" required>
+    <input type="hidden" id="election_id" name="election_id" required>
+    <input type="hidden" id="voter_id" name="voter_id" required>
     
-    <div class="items">
-        <label class="item"><span class="item_name">1. 후보자 A</span><input type="radio" name="item_id" value="0" required><span class="item_btn"></span></label>
-        <label class="item"><span class="item_name">2. 후보자 B</span><input type="radio" name="item_id" value="1" required><span class="item_btn"></span></label>
-        <label class="item"><span class="item_name">3. 후보자 C</span><input type="radio" name="item_id" value="2" required><span class="item_btn"></span></label>
-        <label class="item"><span class="item_name">기권</span><input type="radio" name="item_id" value="3" required><span class="item_btn"></span></label>
-    </div>
+    <div class="items" id="vote_items"></div>
     
     <input type="submit" value="투표하기">
 </form>
