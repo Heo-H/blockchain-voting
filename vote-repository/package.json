@@ -1,10 +1,10 @@
 {
-  "name": "voting-station",
+  "name": "vote-repository",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Heo-H/blockchain-voting#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3"
   }
 }
