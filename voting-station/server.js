@@ -1,4 +1,4 @@
-const config = require(__dirname + '/public/config.json');
+const config = require(__dirname + '/config.json');
 const APP_NAME = config.appName;
 const SERVER_PORT = config.port;
 const STATIC_DOC_PATH = config.staticDocPath;
