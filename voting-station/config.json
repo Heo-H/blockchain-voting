@@ -1,5 +1,7 @@
 {
     "appName": "voting-station",
     "port": 3000,
-    "staticDocPath": "/public"
+    "staticDocPath": "/public",
+
+    "voteRepositoryUrl": "http://localhost:3001"
 }

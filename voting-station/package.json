@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Heo-H/blockchain-voting#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "request": "^2.88.0"
   }
 }
