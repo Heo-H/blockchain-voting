@@ -1,0 +1,30 @@
+.item {
+    display: block;
+    border: solid black 1px;
+    border-bottom: none;
+    text-align: left;
+    height: 64px;
+}
+.item:last-child {
+    height: 63px;
+    border-bottom: solid black 1px;
+}
+
+span.item_name {
+    margin: 20px 0 0 10px;
+    display: block;
+    float: left;
+}
+
+span.item_btn {
+    display: block;
+    float: right;
+    border-left: solid black 1px;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+}
+.item:last-child span.item_btn {
+    margin-top: -1px;
+}
