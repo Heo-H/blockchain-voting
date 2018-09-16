@@ -1,5 +1,7 @@
 {
     "appName": "election-manager",
     "port": 3002,
-    "staticDocPath": "/public"
+    "staticDocPath": "/public",
+
+    "voteRepositoryUrl": "http://localhost:3001"
 }
