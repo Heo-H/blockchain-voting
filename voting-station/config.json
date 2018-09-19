@@ -3,5 +3,5 @@
     "port": 3000,
     "staticDocPath": "/public",
 
-    "voteRepositoryUrl": "http://localhost:3001"
+    "voteRepositoryUrl": "http://202.182.127.57:3001"
 }
