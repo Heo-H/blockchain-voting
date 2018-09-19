@@ -61,7 +61,7 @@ const db = {
     },
 
     push: function (electionId, vote) {
-        
+        web3.personal.unlockAccount(eth.coinbase);
         voting.vote(electionId, vote.votingStationId, vote.voterId, vote.itemId, {from: eth.coinbase, gas: 200000});
     }
 };
