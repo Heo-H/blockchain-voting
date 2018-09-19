@@ -14,6 +14,7 @@ router.post('/vote', (req, res) => {
     const voteUrl = VOTE_REPOSITORY_API + '/vote';
     const data = req.body;
     const electionId = data.election_id;
+    data.voting_station_id = 0;
 
     request.post(voteUrl + '/' + electionId,
         { json: data },
