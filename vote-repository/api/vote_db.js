@@ -1,3 +1,5 @@
+const config = require(__dirname + '/../config.json');
+
 const Web3 = require('web3');
 const web3 = new Web3();
 web3.setProvider(new Web3.providers.HttpProvider('http://localhost:8485'));
@@ -10,7 +12,7 @@ const bytecode = '608060405234801561001057600080fd5b50610230806100206000396000f3
 const abi = [ { "constant": true, "inputs": [ { "name": "election_id", "type": "uint256" } ], "name": "countVotes", "outputs": [ { "name": "", "type": "uint256", "value": "10" } ], "payable": false, "stateMutability": "view", "type": "function", "signature": "0x1840f0ca" }, { "constant": true, "inputs": [ { "name": "election_id", "type": "uint256" }, { "name": "vote_index", "type": "uint256" } ], "name": "getVote", "outputs": [ { "name": "", "type": "uint256" }, { "name": "", "type": "uint256" }, { "name": "", "type": "uint256" }, { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function", "signature": "0x49330cb8" }, { "constant": false, "inputs": [ { "name": "election_id", "type": "uint256" }, { "name": "voting_station_id", "type": "uint256" }, { "name": "voter_id", "type": "uint256" }, { "name": "item_id", "type": "uint256" } ], "name": "vote", "outputs": [], "payable": false, "stateMutability": "nonpayable", "type": "function", "signature": "0x68c9e388" } ];
 const votingContract = eth.contract(abi);
 
-const voting = votingContract.at('0x2c20a8350845b77a5a4df6e4d7c42091cd2a0a50');
+const voting = votingContract.at(config.contractAddress);
 
 const db = {
     voteLists: [],
@@ -59,6 +61,7 @@ const db = {
     },
 
     push: function (electionId, vote) {
+        
         voting.vote(electionId, vote.votingStationId, vote.voterId, vote.itemId, {from: eth.coinbase, gas: 200000});
     }
 };
