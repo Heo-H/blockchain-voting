@@ -2,15 +2,8 @@
   "name": "voting-station",
   "version": "1.0.0",
   "description": "",
-<<<<<<< HEAD
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-=======
   "main": "server.js",
   "scripts": {},
->>>>>>> develop
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Heo-H/blockchain-voting.git"
