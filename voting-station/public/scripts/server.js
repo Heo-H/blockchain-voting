@@ -35,5 +35,7 @@ function getElectionsByVoter(voterId) {
 }
 
 function submitVote(data) {
-    console.log("submit: " + data);
+    $.post("/api/vote", data, function(result) {
+        console.log(result);
+    });
 }

@@ -1,16 +1,11 @@
 {
-  "name": "voting-station",
+  "name": "election-manager",
   "version": "1.0.0",
   "description": "",
-<<<<<<< HEAD
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-=======
   "main": "server.js",
-  "scripts": {},
->>>>>>> develop
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Heo-H/blockchain-voting.git"
@@ -22,7 +17,6 @@
   },
   "homepage": "https://github.com/Heo-H/blockchain-voting#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "request": "^2.88.0"
   }
